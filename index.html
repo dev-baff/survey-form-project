@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Ghana SHS Readiness & Interest Survey</h1>
+        <p id="description">This short survey is designed for Senior High School students in Ghana who are preparing for their next phase. Your responses will help us understand your interests, goals, and challenges so we can offer the right support.</p>
+    </header>
+
+    <form action="#" id="survey-form">   
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <label for="number" id="number-label">Age:</label>
+        <input type="number" id="number" name="number" min="12" max="30" placeholder="Enter your age" required>
+        <label for="radio-buttons">Select your current course of study:</label>
+        <div id="radio-buttons">
+            <input type="radio" id="general-science" name="course" value="General Science" required>
+            <label for="general-science">General Science</label>
+            <input type="radio" id="general-arts" name="course" value="General Arts">
+            <label for="general-arts">General Arts</label>
+            <input type="radio" id="business" name="course" value="Business">
+            <label for="business">Business</label>
+            <input type="radio" id="home-science" name="course" value="Home Science">
+            <label for="home-science">Home Science</label>
+            <input type="radio" id="visual-arts" name="course" value="Visual Arts">
+            <label for="visual-arts">Visual Arts</label>
+        </div>
+
+        <label for="dropdown">What is your preferred next step after SHS?</label>
+        <select id="dropdown" name="next-step" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="university">University</option>
+            <option value="polytechnic">Polytechnic</option>
+            <option value="college-of-education">College of Education</option>
+            <option value="vocational-training">Vocational Training</option>
+            <option value="direct-employment">Direct Employment</option>
+            <option value="entrepreneurship">Entrepreneurship</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="checkboxes">What challenges do you anticipate in your next phase? (Select all that apply)</label>
+        <div id="checkboxes">
+            <input type="checkbox" id="financial-constraints" name="challenges" value="Financial Constraints">
+            <label for="financial-constraints">Financial Constraints</label>
+            <input type="checkbox" id="academic-preparation" name="challenges" value="Academic Preparation">
+            <label for="academic-preparation">Academic Preparation</label>
+            <input type="checkbox" id="career-guidance" name="challenges" value="Career Guidance">
+            <label for="career-guidance">Career Guidance</label>
+            <input type="checkbox" id="mental-health" name="challenges" value="Mental Health">
+            <label for="mental-health">Mental Health</label>
+            <input type="checkbox" id="peer-pressure" name="challenges" value="Peer Pressure">
+            <label for="peer-pressure">Peer Pressure</label>
+            <input type="checkbox" id="other-challenges" name="challenges" value="Other">
+            <label for="other-challenges">Other</label>
+        </div>
+
+        <label for="comments">Any additional comments or concerns?</label>
+        <textarea id="comments" name="comments" placeholder="Share your thoughts, concerns and suggestions here..." rows="4"></textarea>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
